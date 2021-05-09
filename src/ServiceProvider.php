@@ -17,7 +17,7 @@ class ServiceProvider extends AddonServiceProvider
     {
         parent::boot();
 
-        Statamic::style('admin-styler', 'admin-style-custom');
+        Statamic::style('admin-styler', 'admin-styler-custom');
     }
 
 }
