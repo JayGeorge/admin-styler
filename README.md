@@ -1,9 +1,7 @@
-/* Instructions...
+# Admin Styler
 
-    [1] Once the addon is installed create your own file in `/public/vendor/admin-styler/css/admin-styler-custom.css`
-    [2] Copy the CSS below to your new `admin-styler-custom.css` file and customise it to your liking
-
-*/
+1. Once the addon is installed create your own file in `/public/vendor/admin-styler/css/admin-styler-custom.css`
+2. Copy the CSS below to your new `admin-styler-custom.css` file and customise it to your liking
 
 ```css
 :root {
@@ -13,6 +11,8 @@
     --colour-black-hue: 227;
 }
 ```
+
+---
 
 ```css
 /* GROUP CUSTOM / LOGIN
