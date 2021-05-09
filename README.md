@@ -15,6 +15,37 @@
 }
 ```
 
+## Further Reading
+
+### What is this addon?
+
+Admin Styler is a very simple addon that allows you to style Statamic's admin interface for different clients by changing just a few values. Simple styling is possible thanks to CSS Custom Properties and taking advantage of the HSL colour model.
+
+I've been careful not to touch Statamic's beautiful design; just colour it in a little for clients while keeping the same vibe.
+
+### How does it work?
+
+I've taken as many of Statamic's selectors as I can find and mapped them to CSS Custom Properties. So, for example, you can change `--colour-main-hue` to a red hue, and it will roll out across the site, with different degrees of lightness and saturation.
+
+#### Can I look under the hood?
+
+Yep, look in `/vendor/jaygeorge/admin-styler/resources/css/admin-styler-base.css`
+Please don't change any of this CSS though, it'll just be overriden when I push an update to the addon. Instead override it with `admin-styler-custom.css` as per the instructions at the top of this README.
+
+### Why use hues?
+
+Designing with hues (rather than RGB or hex codes) makes colour theory a _lot_ easier to understand. It also allows us to easily theme the admin with very few values, without needing to rely on SCSS colour functions and the like.
+
+If you're not sure about HSL I recommend [Sara Soueidan's blog post](https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/), which goes into detail about its advantages.
+
+### Why use :root:root?
+
+`admin-styler-custom.css` needs to use `:root:root` to override the base. Because of the way Statamic loads stylesheets `admin-styler-custom.css` is loaded _before_ `admin-styler-base.css`, we need to increase specificity to override it. Doubling the root was the least messy way to do this. If you're a know-it-all in the addon world and know how to change the stylesheet loading order, please let me know!
+
+## Feedback
+
+Please feel free to get in touch. You can find me on Statamic's Discord channel or on Twitter @_JayGeorge
+
 ## Extra Customisation Examples
 
 Here are some extra examples of safely overriding Statamic things.
@@ -54,35 +85,20 @@ Here are some extra examples of safely overriding Statamic things.
     height: 100%;
     background: hsl(0 0% 0% / 0.8);
 } */
+
+
+
+
+/* GROUP COMPONENTS / WHITE LABEL LOGO
+=================================================== */
+/* Notes...
+
+   - Statamic uses this class for White Label logos
+
+*/
+
+/* .white-label-logo {
+    min-width: 50px;
+    max-height: 25px!important;
+} */
 ```
-
-## Further Reading
-
-### What is this addon?
-
-Admin Styler is a very simple addon that allows you to style Statamic's admin interface for different clients by changing just a few values. Simple styling is possible thanks to CSS Custom Properties and taking advantage of the HSL colour model.
-
-I've been careful not to touch Statamic's beautiful design; just colour it in a little for clients while keeping the same vibe.
-
-### How does it work?
-
-I've taken as many of Statamic's selectors as I can find and mapped them to CSS Custom Properties. So, for example, you can change `--colour-main-hue` to a red hue, and it will roll out across the site, with different degrees of lightness and saturation.
-
-#### Can I look under the hood?
-
-Yep, look in `/vendor/jaygeorge/admin-styler/resources/css/admin-styler-base.css`
-Please don't change any of this CSS though, it'll just be overriden when I push an update to the addon. Instead override it with `admin-styler-custom.css` as per the instructions at the top of this README.
-
-### Why use hues?
-
-Designing with hues (rather than RGB or hex codes) makes colour theory a _lot_ easier to understand. It also allows us to easily theme the admin with very few values, without needing to rely on SCSS colour functions and the like.
-
-If you're not sure about HSL I recommend [Sara Soueidan's blog post](https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/), which goes into detail about its advantages.
-
-### Why use :root:root?
-
-`admin-styler-custom.css` needs to use `:root:root` to override the base. Because of the way Statamic loads stylesheets `admin-styler-custom.css` is loaded _before_ `admin-styler-base.css`, we need to increase specificity to override it. Doubling the root was the least messy way to do this. If you're a know-it-all in the addon world and know how to change the stylesheet loading order, please let me know!
-
-## Feedback
-
-Please feel free to get in touch. You can find me on Statamic's Discord channel or on Twitter @_JayGeorge
