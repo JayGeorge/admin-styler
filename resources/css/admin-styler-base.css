@@ -1,0 +1,474 @@
+/* Instructions...
+
+    The initial set of variables below (below the --) will flow down into the rest of the selectors.
+    Don't touch this file. Follow the README guide
+
+*/
+
+:root {
+    /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
+    =================================================== */
+    --colour-main-hue: 240;
+    --colour-black-hue: 227;
+
+    /* -- */
+
+    /* Dark to light */
+    --colour-main: hsl(var(--colour-main-hue), 100%, 50%);
+    /* Take the main colour by default, or override this with a darker colour */
+    --colour-main-dark: var(--colour-main);
+    /* This is used for on hover for primary buttons like 'Save & Publish' */
+    --colour-main-hover: hsl(var(--colour-main-hue), 100%, 60%);
+    --colour-main-hover-light: hsl(var(--colour-main-hue) 100% 80% / 5%);
+    --colour-main-focus: hsl(var(--colour-main-hue) 100% 70% / 25%);
+
+    --colour-black-off: hsl(var(--colour-black-hue), 10%, 15%);
+    --colour-black-off-2: hsl(var(--colour-black-hue), 10%, 20%);
+
+    --colour-grey: hsl(var(--colour-black-hue), 10%, 50%);
+    --colour-grey-live-preview: hsl(var(--colour-black-hue), 10%, 80%);
+    --colour-grey-light-buttons: transparent;
+    --colour-grey-light-background: hsl(var(--colour-black-hue), 25%, 96%);
+    --colour-grey-light-forms: hsl(var(--colour-black-hue), 70%, 98%);
+    --colour-grey-light-forms-2: hsl(var(--colour-black-hue), 100%, 99%);
+
+    --colour-text: hsl(var(--colour-black-hue) 32% 16%);
+    /* e.g. current nav */
+    --colour-text-active: hsl(var(--colour-black-hue) 31% 14%);
+    /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
+    =================================================== */
+    --box-shadow-focus: 0 0 0 0.2em var(--colour-main-focus);
+}
+
+
+
+
+/* GROUP ELEMENTS
+=================================================== */
+body {
+    background-color: var(--colour-grey-light-background);
+    /* e.g. 'Home' title when you're on the 'Home' page */
+    color: var(--colour-text);
+}
+
+
+
+
+/* GROUP ELEMENTS / TEXT
+=================================================== */
+.text-blue,
+/* Hover over text when searching for a field type */
+.group:hover .group-hover\:text-blue,
+.markdown-fieldtype-wrapper .markdown-modes button:hover {
+    color: var(--colour-main)!important;
+}
+
+.text-grey-70 {
+    color: var(--colour-grey)!important;
+}
+
+/* e.g. dashboard */
+.content ol,
+.content p,
+.content pre,
+.content ul {
+    color: var(--colour-grey);
+}
+/* GROUP ELEMENTS / TEXT / ACCESSIBILITY / HOVER
+=================================================== */
+a:not([class*=btn]):hover,
+.hover\:text-blue-dark:hover {
+    color: var(--colour-main-hover)!important;
+}
+
+.hover\:text-grey-90:hover {
+    color: var(--colour-text-active)!important;
+}
+
+.hover\:text-grey-80:hover {
+    /* e.g. Collections > Pages > some page > sidebar 'Create & Link Item' */
+    color: var(--colour-main)!important;
+    text-decoration: underline;
+}
+
+
+
+
+/* GROUP ELEMENTS / FORMS
+=================================================== */
+label {
+    color: var(--colour-text);
+}
+
+
+
+
+/* GROUP ELEMENTS / TABLES
+=================================================== */
+.data-table {
+    color: var(--colour-grey);
+}
+
+.data-table tbody tr.row-selected {
+    background: var(--colour-grey-light-background);
+}
+
+.data-table .sortable-column:hover {
+    color: var(--colour-main-hover);
+}
+
+.data-table tbody tr:hover {
+    background: var(--colour-main-hover-light);
+}
+
+
+
+
+/* GROUP ELEMENTS / LINKS
+=================================================== */
+.tabs a.active,
+label .required,
+.clean-content a,
+/* Components > Update Screen */
+.update-release ul li a,
+.pagination li.current a {
+    color: var(--colour-main);
+}
+
+/* e.g. when you add a link to help text */
+.help-block a {
+    color: inherit;
+}
+
+
+
+
+/* GROUP COMPONENTS / BUTTONS
+=================================================== */
+/* 1 */
+.btn-dropdown-primary,
+.btn-primary {
+    background: var(--colour-main);
+    /* Uncomment this if you want to use a gradient */
+    /* background: var(--colour-main-gradient); */
+    border: 1px solid var(--colour-main-dark);
+    box-shadow: inset 0 1px 0 0 var(--colour-main), 0 1px 0 0 rgba(25,30,35,.05), 0 0 0 0 transparent;
+}
+
+/* 2 */
+.btn-flat {
+    background: var(--colour-grey-light-buttons);
+    color: var(--colour-text);
+}
+
+/* Disabled e.g. 'Create Collection' button */
+.btn-dropdown-primary:disabled,
+.btn-primary:disabled {
+    color: hsla(0deg, 100%, 100%, 0.75);
+}
+
+/* User in top right */
+.icon-user-initials {
+    background: white;
+    color: var(--colour-text);
+}
+/* GROUP COMPONENTS / BUTTONS / ACCESSIBILITY / FOCUS
+=================================================== */
+[class*=btn]:focus,
+.rotating-dots-button:focus {
+    box-shadow: var(--box-shadow-focus);
+}
+
+body .btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--colour-main);
+}
+/* GROUP COMPONENTS / BUTTONS / ACCESSIBILITY / HOVER
+=================================================== */
+/* 1 */
+.btn-dropdown-primary :active:not(:disabled),
+.btn-dropdown-primary:hover:not(:disabled),
+.btn-primary :active:not(:disabled),
+.btn-primary:hover:not(:disabled),
+.mq-btn-primary:hover {
+    /* Uncomment this if you want to use a gradient */
+    /* background: var(--colour-main-hover-gradient); */
+    background: var(--colour-main-hover);
+    box-shadow: inset 0 1px 0 0 var(--colour-main-hover), 0 1px 0 0 rgba(25,30,35,.05), 0 0 0 0 transparent;
+}
+
+.dropdown-list .popover-content button:hover {
+    background: var(--colour-main-hover);
+}
+
+/* 2 */
+.btn-flat.active,
+.btn-flat:active:not(:disabled),
+.btn-flat:hover:not(:disabled) {
+    background: var(--colour-grey-light-buttons);
+    text-decoration: underline;
+}
+
+
+
+
+/* GROUP COMPONENTS / NAV
+=================================================== */
+.nav-main li.current>a {
+    color: var(--colour-text-active);
+}
+
+.nav-main li a {
+    color: var(--colour-text);
+}
+
+.nav-main li a:hover {
+    color: var(--colour-main-hover);
+}
+
+
+
+
+/* GROUP COMPONENTS / ASSETS
+=================================================== */
+.assets-fieldtype .assets-fieldtype-picker {
+    background: var(--colour-grey-light-forms);
+}
+
+.assets-fieldtype .assets-fieldtype-picker .upload-text-button {
+    color: var(--colour-main);
+}
+
+.selected .asset-thumbnail {
+    box-shadow: 0 0 0 3px var(--colour-main);
+}
+
+.assets-fieldtype .assets-fieldtype-picker .upload-text-button:hover {
+    color: var(--colour-main-hover);
+}
+
+.asset-editor .editor-preview {
+    background: var(--colour-black-off);
+}
+
+.asset-editor .editor-preview .editor-file-actions {
+    background: var(--colour-black-off-2);
+}
+
+
+
+
+/* GROUP COMPONENTS / FORMS
+=================================================== */
+.input-group .input-text,
+.input-group input.slug:focus,
+.input-group input.slug:hover,
+/* e.g. 'Author' select, 'Template' select */
+.v-select:not(.vs--unsearchable) .vs__selected-options {
+    color: var(--colour-text);
+}
+
+.vs__dropdown-option--highlight {
+    /* e.g. 'template' select background colour of hovered item */
+    background: var(--colour-grey-light-background);
+}
+/* GROUP COMPONENTS / FORMS / ACCESSIBILITY / FOCUS
+=================================================== */
+.input-text:focus,
+.input-text:focus-within,
+input.slug:focus,
+input.slug:focus-within:hover,
+.input-group:not(.focus-within-only):focus,
+.input-group:not(.focus-within-only):focus-within,
+.markdown-fieldtype-wrapper:focus-within,
+.markdown-fieldtype-wrapper .markdown-modes button:focus,
+.markdown-fieldtype-wrapper .markdown-buttons button:focus,
+.vs__dropdown-toggle:focus,
+.vs__dropdown-toggle:focus-within,
+.select-input-container select:focus {
+    box-shadow: var(--box-shadow-focus);
+}
+/* GROUP COMPONENTS / FORMS / ACCESSIBILITY / HOVER
+=================================================== */
+.markdown-fieldtype-wrapper .helpers button:hover {
+    color: var(--colour-main-hover);
+}
+/* GROUP COMPONENTS / FORMS / CODE MIRROR
+=================================================== */
+.CodeMirror,
+/* .markdown-fieldtype-wrapper .helpers, */
+.markdown-fieldtype-wrapper .markdown-modes button.active,
+/* e.g. textarea */
+.markdown-fieldtype-wrapper .CodeMirror {
+    background: var(--colour-grey-light-forms-2);
+    color: var(--colour-text);
+}
+
+
+
+
+/* GROUP COMPONENTS / TABS
+=================================================== */
+/* e.g. >> /cp/fields/blueprints/asset/edit */
+.tabs a.active {
+    border-color: var(--colour-main);
+}
+
+
+
+
+/* GROUP COMPONENTS / FIELD TYPES / BARD
+=================================================== */
+.bard-editor {
+    background-color: var(--colour-grey-light-forms-2);
+}
+
+.bard-fieldtype-wrapper:focus-within,
+.bard-fixed-toolbar .bard-toolbar-button:focus {
+    box-shadow: 0 0 0 0.2rem var(--colour-main-focus);
+}
+/* GROUP COMPONENTS / FIELD TYPES / BARD / PROSEMIRROR
+=================================================== */
+.bard-fieldtype .ProseMirror>blockquote a,
+.bard-fieldtype .ProseMirror>ol a,
+.bard-fieldtype .ProseMirror>p a,
+.bard-fieldtype .ProseMirror>ul a {
+    color: var(--colour-main);
+}
+
+.bard-fieldtype .ProseMirror > blockquote {
+    border-color: var(--colour-main);
+}
+
+
+
+
+/* GROUP COMPONENTS / FIELD TYPES / DATE
+=================================================== */
+/* e.g. Current date colour */
+.vc-text-white {
+    background: var(--colour-main);
+}
+
+body .vc-container {
+    --day-content-bg-color: var(--colour-main);
+    --day-content-bg-color-hover: var(--colour-main-hover);
+    --day-content-dark-bg-color-hover: var(--colour-main-hover);
+    --day-content-bg-color-focus: var(--colour-main-focus);
+}
+
+
+
+
+/* GROUP COMPONENTS / BLUEPRINTS
+=================================================== */
+/* e.g. >> /cp/fields/blueprints/asset/edit */
+.blueprint-section-field .blueprint-section-field-inner {
+    background: var(--colour-grey-light-forms);
+}
+
+
+
+
+/* GROUP COMPONENTS / LIVE PREVIEW
+=================================================== */
+.live-preview-contents {
+    background: var(--colour-grey-live-preview);
+}
+
+
+
+
+/* GROUP COMPONENTS / SEARCH
+=================================================== */
+.global-search .active {
+    background: var(--colour-main-hover-light);
+}
+
+
+
+
+/* GROUP COMPONENTS / FILTER
+=================================================== */
+.filter {
+    background: var(--colour-grey-light-forms);
+}
+
+
+
+
+/* GROUP COMPONENTS / DATA LISTS
+=================================================== */
+.data-list-filter-link.active {
+    border-color: var(--colour-main);
+}
+
+
+
+
+
+/* GROUP COMPONENTS / LOGIN
+=================================================== */
+.outside .logo {
+    padding-block-start: 25vh!important;
+}
+
+.outside .logo svg path {
+    fill: white;
+}
+
+.outside.rad-mode {
+    background: var(--colour-black-off-2);
+}
+
+.outside.rad-mode .forgot-password-link {
+    color: white;
+    text-shadow: none;
+}
+
+.outside.rad-mode .btn-dropdown-primary,
+.outside.rad-mode .btn-primary {
+    background: var(--colour-main)!important;
+    box-shadow: none!important;
+}
+
+.outside.rad-mode .btn-dropdown-primary:hover,
+.outside.rad-mode .btn-primary:hover {
+    background: var(--colour-main-hover)!important;
+    box-shadow: none!important;
+}
+
+.auth-card {
+    box-shadow: none!important;
+}
+
+
+
+
+/* GROUP COMPONENTS / UPDATE SCREEN (CROSS POLLINATED)
+=================================================== */
+
+
+
+
+/* GROUP UTILITIES
+=================================================== */
+.bg-grey-20 {
+    background: var(--colour-grey-light-forms)!important;
+}
+
+.bg-blue {
+    background: var(--colour-main);
+}
+
+
+
+
+/* GROUP DEBUG
+=================================================== */
+:root {
+    /* Comment out the below rules to test which CP elements have been missed */
+    /* --colour-text: red; */
+    /* --colour-text-active: red; */
+    /* --colour-grey: red; */
+}
