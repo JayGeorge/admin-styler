@@ -69,6 +69,10 @@ Designing with hues (rather than RGB or hex codes) makes colour theory a _lot_ e
 
 If you're not sure about HSL I recommend [Sara Soueidan's blog post](https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/), which goes into detail about its advantages.
 
+### Why use :root:root?
+
+`admin-styler-custom.css` needs to use `:root:root` to override the base. Because of the way Statamic loads stylesheets `admin-styler-custom.css` is loaded _before_ `admin-styler-base.css`, we need to increase specificity to override it. Doubling the root was the least messy way to do this. If you're a know-it-all in the addon world and know how to change the stylesheet loading order, please let me know!
+
 ## Feedback
 
 Please feel free to get in touch. You can find me on Statamic's Discord channel or on Twitter @_JayGeorge
