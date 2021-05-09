@@ -1,0 +1,28 @@
+{
+    "name": "jaygeorge/admin-styler",
+    "description": "Systematically style the Admin in seconds with a few of variables",
+    "authors": [
+        {
+            "name": "Jay George"
+        }
+    ],
+    "support": {
+        "email": "statamic-admin-styler@jaygeorge.co.uk"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaygeorge\\AdminStyler\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Admin Styler",
+            "description": "Systematically style the Admin in seconds with a few of variables"
+        },
+        "laravel": {
+            "providers": [
+                "Jaygeorge\\AdminStyler\\ServiceProvider"
+            ]
+        }
+    }
+}
