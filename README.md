@@ -5,13 +5,16 @@
 
 */
 
+```css
 :root {
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main-hue: 240;
     --colour-black-hue: 227;
 }
+```
 
+```css
 /* GROUP CUSTOM / LOGIN
 =================================================== */
 /* 
@@ -46,3 +49,4 @@
     height: 100%;
     background: hsl(0 0% 0% / 0.8);
 } */
+```

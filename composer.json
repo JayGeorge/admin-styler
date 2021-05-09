@@ -1,6 +1,6 @@
 {
     "name": "jaygeorge/admin-styler",
-    "description": "Systematically style the Admin in seconds with a few of variables",
+    "description": "Systematically style the Admin in a few seconds with CSS variables",
     "authors": [
         {
             "name": "Jay George"
@@ -17,7 +17,7 @@
     "extra": {
         "statamic": {
             "name": "Admin Styler",
-            "description": "Systematically style the Admin in seconds with a few of variables"
+            "description": "Systematically style the Admin in a few seconds with CSS variables"
         },
         "laravel": {
             "providers": [
