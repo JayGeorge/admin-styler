@@ -8,11 +8,16 @@
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main-hue: 240;
-    --colour-black-hue: 227;
+    --colour-main-saturation: 100%;
+    --colour-main-lightness: 50%;
+
+    --colour-black-hue: var(--colour-main-hue);
 }
 ```
 
 ## Extra Customisation Examples
+
+Here are some extra examples of safely overriding Statamic things.
 
 ```css
 /* GROUP CUSTOM / LOGIN
@@ -59,9 +64,14 @@ Admin Styler is a very simple addon that allows you to style Statamic's admin in
 
 I've been careful not to touch Statamic's beautiful design; just colour it in a little for clients while keeping the same vibe.
 
-## How does it work?
+### How does it work?
 
 I've taken as many of Statamic's selectors as I can find and mapped them to CSS Custom Properties. So, for example, you can change `--colour-main-hue` to a red hue, and it will roll out across the site, with different degrees of lightness and saturation.
+
+#### Can I look under the hood?
+
+Yep, look in `/vendor/jaygeorge/admin-styler/resources/css/admin-styler-base.css`
+Please don't change any of this CSS though, it'll just be overriden when I push an update to the addon. Instead override it with `admin-styler-custom.css` as per the instructions at the top of this README.
 
 ### Why use hues?
 

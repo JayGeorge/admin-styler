@@ -9,18 +9,21 @@
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main-hue: 240;
-    --colour-black-hue: 227;
+    --colour-main-saturation: 100%;
+    --colour-main-lightness: 50%;
+
+    --colour-black-hue: var(--colour-main-hue);
 
     /* -- */
 
     /* Dark to light */
-    --colour-main: hsl(var(--colour-main-hue), 100%, 50%);
+    --colour-main: hsl(var(--colour-main-hue), var(--colour-main-saturation), var(--colour-main-lightness));
     /* Take the main colour by default, or override this with a darker colour */
     --colour-main-dark: var(--colour-main);
-    /* This is used for on hover for primary buttons like 'Save & Publish' */
-    --colour-main-hover: hsl(var(--colour-main-hue), 100%, 60%);
-    --colour-main-hover-light: hsl(var(--colour-main-hue) 100% 80% / 5%);
-    --colour-main-focus: hsl(var(--colour-main-hue) 100% 70% / 25%);
+    /* Darker. This is used for on hover for primary buttons like 'Save & Publish' */
+    --colour-main-hover: hsl(var(--colour-main-hue), var(--colour-main-saturation), calc(var(--colour-main-lightness) * 0.5));
+    --colour-main-hover-light: hsl(var(--colour-main-hue) var(--colour-main-saturation) 80% / 5%);
+    --colour-main-focus: hsl(var(--colour-main-hue) var(--colour-main-saturation) 70% / 25%);
 
     --colour-black-off: hsl(var(--colour-black-hue), 10%, 15%);
     --colour-black-off-2: hsl(var(--colour-black-hue), 10%, 20%);
@@ -194,7 +197,8 @@ body .btn-primary:focus,
     /* Uncomment this if you want to use a gradient */
     /* background: var(--colour-main-hover-gradient); */
     background: var(--colour-main-hover);
-    box-shadow: inset 0 1px 0 0 var(--colour-main-hover), 0 1px 0 0 rgba(25,30,35,.05), 0 0 0 0 transparent;
+    box-shadow: inset 0 6px 0 0 var(--colour-main-hover), 0 1px 0 0 rgba(25,30,35,.05), 0 0 0 0 transparent;
+    border: 1px solid var(--colour-main);
 }
 
 .dropdown-list .popover-content button:hover {
