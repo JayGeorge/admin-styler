@@ -1,6 +1,6 @@
 /* Instructions...
 
-    The initial set of variables below (below the --) will flow down into the rest of the selectors.
+    The initial set of variables below (below the --- comment) will flow down into the rest of the selectors.
     Don't touch this file. Follow the README guide
 
 */
@@ -14,7 +14,7 @@
 
     --colour-black-hue: var(--colour-main-hue);
 
-    /* -- */
+    /* --- */
 
     /* Dark to light */
     --colour-main: hsl(var(--colour-main-hue), var(--colour-main-saturation), var(--colour-main-lightness));
@@ -417,27 +417,14 @@ body .vc-container {
     padding-block-start: 25vh!important;
 }
 
-.outside .logo svg path {
-    fill: white;
-}
-
-.outside.rad-mode {
-    background: var(--colour-black-off-2);
-}
-
-.outside.rad-mode .forgot-password-link {
-    color: white;
-    text-shadow: none;
-}
-
-.outside.rad-mode .btn-dropdown-primary,
-.outside.rad-mode .btn-primary {
+.outside.rad-theme .btn-dropdown-primary,
+.outside.rad-theme .btn-primary {
     background: var(--colour-main)!important;
     box-shadow: none!important;
 }
 
-.outside.rad-mode .btn-dropdown-primary:hover,
-.outside.rad-mode .btn-primary:hover {
+.outside.rad-theme .btn-dropdown-primary:hover,
+.outside.rad-theme .btn-primary:hover {
     background: var(--colour-main-hover)!important;
     box-shadow: none!important;
 }
