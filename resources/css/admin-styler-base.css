@@ -93,6 +93,13 @@ a:not([class*=btn]):hover,
     color: var(--colour-main)!important;
     text-decoration: underline;
 }
+/* GROUP ELEMENTS / TEXT / ACCESSIBILITY / HOVER / where white text is needed
+=================================================== */
+/* e.g. Create Entry > Submenu */
+.dropdown-list .popover-content a:hover, .dropdown-list .popover-content button:hover {
+    background: var(--colour-main);
+    color: white!important;
+}
 
 
 
