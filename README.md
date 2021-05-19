@@ -5,6 +5,9 @@
 
 ```css
 :root:root {
+    /* Notes...
+        Set the values for --colour-main-saturation to 0% and --colour-main-lightness to 10% for black
+    */
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main-hue: 240;
@@ -59,7 +62,7 @@ Here are some extra examples of safely overriding Statamic things.
     Replace 'some-texture' with your own
 
 */
-/* .outside.rad-mode {
+/* .outside.rad-theme {
     background: black;
 }
 

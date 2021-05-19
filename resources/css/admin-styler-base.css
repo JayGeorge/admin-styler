@@ -199,7 +199,7 @@ body .btn-primary:focus,
 .btn-dropdown-primary :active:not(:disabled),
 .btn-dropdown-primary:hover:not(:disabled),
 .btn-primary :active:not(:disabled),
-.btn-primary:hover:not(:disabled),
+body:not(.outside) .btn-primary:hover:not(:disabled),
 .mq-btn-primary:hover {
     /* Uncomment this if you want to use a gradient */
     /* background: var(--colour-main-hover-gradient); */
