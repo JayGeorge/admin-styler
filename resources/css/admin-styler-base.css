@@ -321,8 +321,14 @@ input.slug:focus-within:hover,
 /* GROUP COMPONENTS / TABS
 =================================================== */
 /* e.g. >> /cp/fields/blueprints/asset/edit */
-.tabs a.active {
+.tabs a.active,
+/* e.g. on a page where you might have Main, then another tab */
+.tabs .tab-button.active {
     border-color: var(--colour-main);
+}
+
+.tabs .tab-button.active {
+    color: var(--colour-main);
 }
 
 
