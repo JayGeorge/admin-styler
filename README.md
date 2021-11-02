@@ -10,11 +10,14 @@
     */
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
-    --colour-main-hue: 240;
-    --colour-main-saturation: 100%;
+    --colour-main-hue: 355;
+    --colour-main-saturation: 80%;
     --colour-main-lightness: 50%;
 
     --colour-black-hue: var(--colour-main-hue);
+
+    --background-saturation: 25%;
+    --background-lightness: 96%;
 }
 ```
 

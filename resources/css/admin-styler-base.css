@@ -31,7 +31,7 @@
     --colour-grey: hsl(var(--colour-black-hue), 10%, 50%);
     --colour-grey-live-preview: hsl(var(--colour-black-hue), 10%, 80%);
     --colour-grey-light-buttons: transparent;
-    --colour-grey-light-background: hsl(var(--colour-black-hue), 25%, 96%);
+    --colour-grey-light-background: hsl(var(--colour-black-hue), var(--background-saturation, 25%), var(--background-lightness, 96%));
     --colour-grey-light-forms: hsl(var(--colour-black-hue), 70%, 98%);
     --colour-grey-light-forms-2: hsl(var(--colour-black-hue), 100%, 99%);
 
@@ -470,9 +470,9 @@ body .vc-container {
 
 /* GROUP DEBUG
 =================================================== */
-:root {
-    /* Comment out the below rules to test which CP elements have been missed */
+/* Comment out the below rules to test which CP elements have been missed */
+/* :root { */
     /* --colour-text: red; */
     /* --colour-text-active: red; */
     /* --colour-grey: red; */
-}
+/* } */
