@@ -5,6 +5,7 @@
 
 ```css
 :root:root {
+    :root:root {
     /* Notes...
         Set the values for --colour-main-saturation to 0% and --colour-main-lightness to 10% for black
     */
@@ -15,9 +16,11 @@
     --colour-main-lightness: 50%;
 
     --colour-black-hue: var(--colour-main-hue);
+    /* This is the default Statamic background hue */    
+    /* --colour-black-hue: 210; */
 
-    --background-saturation: 25%;
-    --background-lightness: 96%;
+    --background-saturation: 31%;
+    --background-lightness: 95%;
 }
 ```
 
