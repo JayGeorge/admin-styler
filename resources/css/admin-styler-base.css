@@ -110,6 +110,11 @@ label {
     color: var(--colour-text);
 }
 
+/* e.g. text inputs like Title */
+.input-text, input.slug:focus, input.slug:hover {
+    background: var(--colour-grey-light-forms-2);
+}
+
 
 
 
