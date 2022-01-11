@@ -445,6 +445,10 @@ body .vc-container {
     padding-block-start: 25vh!important;
 }
 
+.outside label {
+    color: var(--colour);
+}
+
 .outside.rad-theme .btn-dropdown-primary,
 .outside.rad-theme .btn-primary,
 .outside .btn-dropdown-primary, 
