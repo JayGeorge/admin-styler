@@ -465,6 +465,10 @@ body .vc-container {
     box-shadow: none!important;
 }
 
+.outside.business-theme {
+    background: var(--colour-grey-light-background);
+}
+
 .auth-card {
     box-shadow: none!important;
 }
