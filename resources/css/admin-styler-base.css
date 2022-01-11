@@ -157,7 +157,8 @@ label .required,
 =================================================== */
 /* 1 */
 .btn-dropdown-primary,
-.btn-primary {
+.btn-primary,
+.outside .btn-primary:hover {
     background: var(--colour-main);
     /* Uncomment this if you want to use a gradient */
     /* background: var(--colour-main-gradient); */
@@ -235,6 +236,15 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
 
 .nav-main li a:hover {
     color: var(--colour-main-hover);
+}
+
+
+
+
+/* GROUP COMPONENTS / NAV / TREE
+=================================================== */
+.page-tree .tree-node-inner:hover {
+    background-color: var(--colour-main-hover-light);
 }
 
 
@@ -431,13 +441,17 @@ body .vc-container {
 }
 
 .outside.rad-theme .btn-dropdown-primary,
-.outside.rad-theme .btn-primary {
+.outside.rad-theme .btn-primary,
+.outside .btn-dropdown-primary, 
+.outside .btn-primary {
     background: var(--colour-main)!important;
     box-shadow: none!important;
 }
 
 .outside.rad-theme .btn-dropdown-primary:hover,
-.outside.rad-theme .btn-primary:hover {
+.outside.rad-theme .btn-primary:hover,
+.outside .btn-dropdown-primary:hover,
+.outside .btn-primary:hover {
     background: var(--colour-main-hover)!important;
     box-shadow: none!important;
 }
