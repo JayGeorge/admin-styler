@@ -16,11 +16,15 @@
     --colour-main-lightness: 50%;
 
     --colour-black-hue: var(--colour-main-hue);
-    /* This is the default Statamic background hue */    
+    /* This is the default Statamic background hue */
     /* --colour-black-hue: 210; */
 
     --background-saturation: 31%;
     --background-lightness: 95%;
+
+    /* Comment these out to reduce/control the saturation of form field backgrounds */
+    /* --colour-grey-light-forms: hsl(var(--colour-black-hue), 0%, 99%); */
+    /* --colour-grey-light-forms-2: hsl(var(--colour-black-hue), 0%, 99%); */
 }
 ```
 
