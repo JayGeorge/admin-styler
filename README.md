@@ -5,7 +5,6 @@
 
 ```css
 :root:root {
-    :root:root {
     /* Notes...
         Set the values for --colour-main-saturation to 0% and --colour-main-lightness to 10% for black
     */
