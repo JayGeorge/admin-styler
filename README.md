@@ -23,7 +23,7 @@
 
     /* Comment these out to reduce/control the saturation of form field backgrounds */
     /* --colour-grey-light-forms: hsl(var(--colour-black-hue), 0%, 99%); */
-    /* --colour-grey-light-forms-2: hsl(var(--colour-black-hue), 0%, 99%); */
+    /* --colour-grey-light-forms-1: hsl(var(--colour-black-hue), 0%, 99%); */
 }
 ```
 

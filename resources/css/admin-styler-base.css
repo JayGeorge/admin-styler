@@ -33,7 +33,7 @@
     --colour-grey-light-buttons: transparent;
     --colour-grey-light-background: hsl(var(--colour-black-hue), var(--background-saturation, 31%), var(--background-lightness, 95%));
     --colour-grey-light-forms: hsl(var(--colour-black-hue), 70%, 98%);
-    --colour-grey-light-forms-2: hsl(var(--colour-black-hue), 100%, 99%);
+    --colour-grey-light-forms-1: hsl(var(--colour-black-hue), 100%, 99%);
 
     --colour-text: hsl(var(--colour-black-hue) 32% 16%);
     /* e.g. current nav */
@@ -112,7 +112,7 @@ label {
 
 /* e.g. text inputs like Title */
 .input-text, input.slug:focus, input.slug:hover {
-    background: var(--colour-grey-light-forms-2);
+    background: var(--colour-grey-light-forms-1);
 }
 
 
@@ -326,7 +326,7 @@ input.slug:focus-within:hover,
 .markdown-fieldtype-wrapper .markdown-modes button.active,
 /* e.g. textarea */
 .markdown-fieldtype-wrapper .CodeMirror {
-    background: var(--colour-grey-light-forms-2);
+    background: var(--colour-grey-light-forms-1);
     color: var(--colour-text);
 }
 
@@ -343,7 +343,7 @@ input.slug:focus-within:hover,
 }
 
 .tabs .tab-button {
-    background-color: var(--colour-grey-light-forms-2);
+    background-color: var(--colour-grey-light-forms-1);
 }
 
 .tabs .tab-button.active {
@@ -356,12 +356,12 @@ input.slug:focus-within:hover,
 /* GROUP COMPONENTS / FIELD TYPES / SECTION
 =================================================== */
 .section-fieldtype {
-    background-color: var(--colour-grey-light-forms-2);
+    background-color: var(--colour-grey-light-forms-1);
 }
 /* GROUP COMPONENTS / FIELD TYPES / BARD
 =================================================== */
 .bard-editor {
-    background-color: var(--colour-grey-light-forms-2);
+    background-color: var(--colour-grey-light-forms-1);
 }
 
 .bard-fieldtype-wrapper:focus-within,
@@ -387,7 +387,7 @@ input.slug:focus-within:hover,
 }
 
 .replicator-fieldtype {
-    background-color: var(--colour-grey-light-forms-2);
+    background-color: var(--colour-grey-light-forms-1);
 }
 
 
