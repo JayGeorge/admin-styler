@@ -27,6 +27,14 @@
 }
 ```
 
+## Installing
+
+`composer require jaygeorge/admin-styler`
+
+## Updating via command line
+
+- Run `composer update`
+
 ## Further Reading
 
 ### What is this addon?
