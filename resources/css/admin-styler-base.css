@@ -342,6 +342,10 @@ input.slug:focus-within:hover,
     border-color: var(--colour-main);
 }
 
+.tabs .tab-button {
+    background-color: var(--colour-grey-light-forms-2);
+}
+
 .tabs .tab-button.active {
     color: var(--colour-main);
 }
@@ -349,6 +353,11 @@ input.slug:focus-within:hover,
 
 
 
+/* GROUP COMPONENTS / FIELD TYPES / SECTION
+=================================================== */
+.section-fieldtype {
+    background-color: var(--colour-grey-light-forms-2);
+}
 /* GROUP COMPONENTS / FIELD TYPES / BARD
 =================================================== */
 .bard-editor {
@@ -370,6 +379,15 @@ input.slug:focus-within:hover,
 
 .bard-fieldtype .ProseMirror > blockquote {
     border-color: var(--colour-main);
+}
+/* GROUP COMPONENTS / FIELD TYPES / REPLICATOR
+=================================================== */
+.replicator-set-header {
+    background-color: var(--colour-grey-light-background);
+}
+
+.replicator-fieldtype {
+    background-color: var(--colour-grey-light-forms-2);
 }
 
 
