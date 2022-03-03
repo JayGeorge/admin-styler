@@ -5,8 +5,17 @@
 
 ```css
 :root:root {
-    /* Notes...
-        Set the values for --colour-main-saturation to 0%, --background-saturation to 0%, and --colour-main-lightness to 10% for black
+    /* Examples...
+        ## Grayscale
+        --colour-main-saturation: 0%;
+        --colour-main-lightness: 10%;
+        --background-saturation: 0%;
+
+        ## Light
+        --colour-main-saturation: 0%;
+        --colour-main-lightness: 10%;
+        --background-saturation: 0%;
+        --background-saturation: 98%;
     */
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
