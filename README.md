@@ -15,7 +15,7 @@
         --colour-main-saturation: 0%;
         --colour-main-lightness: 10%;
         --background-saturation: 0%;
-        --background-saturation: 98%;
+        --background-lightness: 98%;
     */
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
