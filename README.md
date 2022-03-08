@@ -7,7 +7,7 @@
 :root:root {
     /* Examples...
         ## Grayscale
-        --colour-main-hue: 255;
+        --colour-main-hue: 225;
         --colour-main-saturation: 0%;
         --colour-main-lightness: 10%;
         --background-saturation: 0%;
