@@ -466,7 +466,7 @@ body .vc-container {
 }
 
 .outside label {
-    color: var(--colour);
+    color: var(--colour-text);
 }
 
 .outside.rad-theme .btn-dropdown-primary,
