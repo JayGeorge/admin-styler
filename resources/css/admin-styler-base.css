@@ -24,6 +24,7 @@
     --colour-main-hover: hsl(var(--colour-main-hue), var(--colour-main-saturation), calc(var(--colour-main-lightness) * 0.5));
     --colour-main-hover-light: hsl(var(--colour-main-hue) var(--colour-main-saturation) 80% / 5%);
     --colour-main-focus: hsl(var(--colour-main-hue) var(--colour-main-saturation) 60% / 100%);
+    --colour-main-focus-light: hsl(var(--colour-main-hue) var(--colour-main-saturation) 70% / 45%);
 
     --colour-black-off: hsl(var(--colour-black-hue), 10%, 15%);
     --colour-black-off-2: hsl(var(--colour-black-hue), 10%, 20%);
@@ -40,7 +41,7 @@
     --colour-text-active: hsl(var(--colour-black-hue) 31% 14%);
     /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
     =================================================== */
-    --box-shadow-focus: 0 0 0 0.2em var(--colour-main-focus);
+    --box-shadow-focus: 0 0 0 0.2em var(--colour-main-focus-light);
 }
 
 
