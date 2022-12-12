@@ -190,6 +190,13 @@ label .required,
 }
 /* GROUP COMPONENTS / BUTTONS / ACCESSIBILITY / FOCUS
 =================================================== */
+/* Native for browsers that support it - https://caniuse.com/#search=focus-visible
+https://twitter.com/LeaVerou/status/1045836563505188867 */
+:focus:not(:focus-visible),
+:focus:not(:focus-visible) * {
+    outline: none!important;
+}
+
 [class*=btn]:focus,
 .rotating-dots-button:focus,
 .toggle-container:focus {
