@@ -125,7 +125,7 @@ label {
 }
 
 .data-table tbody tr.row-selected {
-    background: var(--colour-grey-light-background);
+    background-color: var(--colour-grey-light-background);
 }
 
 .data-table .sortable-column:hover {
@@ -133,7 +133,17 @@ label {
 }
 
 .data-table tbody tr:hover {
-    background: var(--colour-main-hover-light);
+    background-color: var(--colour-main-hover-light);
+}
+/* GROUP ELEMENTS / TABLES / GRID FIELD TYPE
+=================================================== */
+.grid-item-header {
+    background-color: var(--colour-grey-light-background)
+}
+
+.grid-table thead th,
+.grid-table > tbody > tr > td.drag-handle {
+    background-color: var(--colour-grey-light-forms);
 }
 
 
@@ -512,6 +522,10 @@ body .vc-container {
 
 /* GROUP UTILITIES
 =================================================== */
+.bg-grey-10 {
+    background: var(--colour-grey-light-forms)!important;
+}
+
 .bg-grey-20 {
     background: var(--colour-grey-light-forms)!important;
 }
