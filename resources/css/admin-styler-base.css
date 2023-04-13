@@ -534,6 +534,10 @@ body .vc-container {
     background: var(--colour-main);
 }
 
+.border-blue-lighter { /* e.g. used on bard blocks */
+    border-color: var(--colour-main)!important;
+}
+
 
 
 
