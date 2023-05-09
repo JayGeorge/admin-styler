@@ -32,6 +32,7 @@
     --colour-grey-live-preview: hsl(var(--colour-black-hue), 10%, 80%);
     --colour-grey-light-buttons: transparent;
     --colour-grey-light-background: hsl(var(--colour-black-hue), var(--background-saturation, 31%), var(--background-lightness, 95%));
+    --colour-grey-light-neutral: hsl(var(--colour-black-hue), 50%, 98%);
     --colour-grey-light-forms: hsl(var(--colour-black-hue), 70%, 98%);
     --colour-grey-light-forms-1: hsl(var(--colour-black-hue), 100%, 99%);
 
@@ -533,7 +534,8 @@ body .vc-container {
 }
 
 .bg-gray-100 {
-    background: var(--colour-grey-light-background)!important; /* e.g. when browsing fieldtypes in in the blueprint editor */
+    /* e.g. when browsing fieldtypes in in the blueprint editor */
+    background: var(--colour-grey-light-neutral)!important;
 }
 
 .bg-gray-200 {
