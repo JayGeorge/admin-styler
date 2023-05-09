@@ -125,7 +125,7 @@ label {
     & thead {
         background: var(--colour-grey-light-forms-1); /* e.g. >> /cp/assets/browse/assets */
     }
-    & tbody tr
+    & tbody tr {
         &.row-selected {
             background-color: var(--colour-grey-light-background);
         }
