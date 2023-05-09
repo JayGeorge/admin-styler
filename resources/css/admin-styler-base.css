@@ -61,8 +61,7 @@ body {
 =================================================== */
 .text-blue,
 /* Hover over text when searching for a field type */
-.group:hover .group-hover\:text-blue,
-.markdown-fieldtype-wrapper .markdown-modes button:hover {
+.group:hover .group-hover\:text-blue {
     color: var(--colour-main)!important;
 }
 
@@ -122,6 +121,10 @@ label {
 =================================================== */
 .data-table {
     color: var(--colour-grey);
+}
+
+.data-table thead {
+    background: var(--colour-grey-light-forms-1); /* e.g. >> /cp/assets/browse/assets */
 }
 
 .data-table tbody tr.row-selected {
@@ -523,12 +526,16 @@ body .vc-container {
 
 /* GROUP UTILITIES
 =================================================== */
-.bg-grey-10 {
+.bg-gray-10 {
     background: var(--colour-grey-light-forms)!important;
 }
 
-.bg-grey-20 {
+.bg-gray-20 {
     background: var(--colour-grey-light-forms)!important;
+}
+
+.bg-gray-200 {
+    background: var(--colour-grey-light-buttons)!important; /* e.g. >> /cp/assets/browse/assets */
 }
 
 .bg-blue {
