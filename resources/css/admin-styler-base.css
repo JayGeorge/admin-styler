@@ -536,6 +536,10 @@ body .vc-container {
     background: var(--colour-grey-light-buttons)!important; /* e.g. >> /cp/assets/browse/assets */
 }
 
+.bg-gray-300 {
+    background: var(--colour-grey-light-forms-1)!important; /* e.g. >> /cp/collections/somethings/blueprints/somethings/edit
+}
+
 .bg-blue {
     background: var(--colour-main);
 }
