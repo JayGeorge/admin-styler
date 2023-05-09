@@ -364,7 +364,7 @@ input.slug:focus-within:hover,
 }
 
 .tabs .tab-button {
-    background-color: var(--colour-grey-light-background);
+    background-color: var(--colour-grey-light-buttons);
 }
 
 .tabs .tab-button.active,
