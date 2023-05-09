@@ -121,22 +121,20 @@ label {
 =================================================== */
 .data-table {
     color: var(--colour-grey);
-}
-
-.data-table thead {
-    background: var(--colour-grey-light-forms-1); /* e.g. >> /cp/assets/browse/assets */
-}
-
-.data-table tbody tr.row-selected {
-    background-color: var(--colour-grey-light-background);
-}
-
-.data-table .sortable-column:hover {
-    color: var(--colour-main-hover);
-}
-
-.data-table tbody tr:hover {
-    background-color: var(--colour-main-hover-light);
+    & thead {
+        background: var(--colour-grey-light-forms-1); /* e.g. >> /cp/assets/browse/assets */
+    }
+    & tbody tr
+        &.row-selected {
+            background-color: var(--colour-grey-light-background);
+        }
+        &:hover {
+            background-color: var(--colour-main-hover-light);
+        }
+    }
+    .sortable-column:hover {
+        color: var(--colour-main-hover);
+    }
 }
 /* GROUP ELEMENTS / TABLES / GRID FIELD TYPE
 =================================================== */
