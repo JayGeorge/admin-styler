@@ -363,7 +363,7 @@ input.slug:focus-within:hover,
 }
 
 .tabs .tab-button {
-    background-color: var(--colour-grey-light-forms-1);
+    background-color: var(--colour-grey-light-background);
 }
 
 .tabs .tab-button.active,
@@ -530,6 +530,10 @@ body .vc-container {
 
 .bg-gray-20 {
     background: var(--colour-grey-light-forms)!important;
+}
+
+.bg-gray-100 {
+    background: var(--colour-grey-light-background)!important; /* e.g. when browsing fieldtypes in in the blueprint editor */
 }
 
 .bg-gray-200 {
