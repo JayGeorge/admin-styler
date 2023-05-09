@@ -45,8 +45,6 @@
 }
 
 
-
-
 /* GROUP ELEMENTS
 =================================================== */
 body {
@@ -334,13 +332,18 @@ input.slug:focus,
 input.slug:focus-within:hover,
 .input-group:not(.focus-within-only):focus,
 .input-group:not(.focus-within-only):focus-within,
-.markdown-fieldtype-wrapper:focus-within,
+/* Cancelled based on causing duplicate focus when focusing on a markdown field e.g. the default Content field */
+/* .markdown-fieldtype-wrapper:focus-within, */
 .markdown-fieldtype-wrapper .markdown-modes button:focus,
 .markdown-fieldtype-wrapper .markdown-buttons button:focus,
 .vs__dropdown-toggle:focus,
 .vs__dropdown-toggle:focus-within,
 .select-input-container select:focus {
     box-shadow: var(--box-shadow-focus);
+}
+.markdown-fieldtype-wrapper .CodeMirror:focus-within {
+    /* Focus on a markdown fieldtype */
+    --tw-ring-color: var(--colour-main-focus);
 }
 /* GROUP COMPONENTS / FORMS / ACCESSIBILITY / HOVER
 =================================================== */
