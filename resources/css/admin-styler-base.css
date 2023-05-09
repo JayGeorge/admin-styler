@@ -115,6 +115,13 @@ label {
     background: var(--colour-grey-light-forms-1);
 }
 
+.input-text::-moz-placeholder {
+    color: var(--colour-grey);
+}
+.input-text::placeholder {
+    color: var(--colour-grey);
+}
+
 
 
 
