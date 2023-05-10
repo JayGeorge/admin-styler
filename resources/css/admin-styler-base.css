@@ -362,12 +362,16 @@ input.slug:focus-within:hover,
 /* GROUP COMPONENTS / FORMS / CODE MIRROR
 =================================================== */
 .CodeMirror,
-/* .markdown-fieldtype-wrapper .helpers, */
-.markdown-fieldtype-wrapper .markdown-modes button.active,
 /* e.g. textarea */
 .markdown-fieldtype-wrapper .CodeMirror {
     background: var(--colour-grey-6);
     color: var(--colour-text);
+}
+
+/* .markdown-fieldtype-wrapper .helpers, */
+.markdown-fieldtype-wrapper .markdown-modes button.active {
+    background: var(--colour-grey-3);
+    color: var(--colour-main-dark);
 }
 
 
