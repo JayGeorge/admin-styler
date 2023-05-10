@@ -28,13 +28,13 @@
     --colour-black-off: hsl(var(--colour-black-hue), 10%, 15%);
     --colour-black-off-2: hsl(var(--colour-black-hue), 10%, 20%);
 
-    --colour-grey: hsl(var(--colour-black-hue), 10%, 50%);
-    --colour-grey-live-preview: hsl(var(--colour-black-hue), 10%, 80%);
-    --colour-grey-light-buttons: transparent;
-    --colour-grey-light-background: hsl(var(--colour-black-hue), var(--background-saturation, 31%), var(--background-lightness, 95%));
-    --colour-grey-light-neutral: hsl(var(--colour-black-hue), 50%, 98%);
-    --colour-grey-light-forms: hsl(var(--colour-black-hue), 70%, 98%);
-    --colour-grey-light-forms-1: hsl(var(--colour-black-hue), 100%, 99%);
+    --colour-grey-1: hsl(var(--colour-black-hue), 10%, 50%);
+    --colour-grey-2: hsl(var(--colour-black-hue), 10%, 80%);
+    --colour-grey-3: hsl(var(--colour-black-hue), var(--background-saturation, 31%), var(--background-lightness, 95%));
+    --colour-grey-4: hsl(var(--colour-black-hue), 50%, 98%);
+    --colour-grey-5: hsl(var(--colour-black-hue), 70%, 98%);
+    --colour-grey-6: hsl(var(--colour-black-hue), 100%, 99%);
+    --colour-grey-transparent: transparent;
 
     --colour-text: hsl(var(--colour-black-hue) 32% 16%);
     /* e.g. current nav */
@@ -48,7 +48,7 @@
 /* GROUP ELEMENTS
 =================================================== */
 body {
-    background-color: var(--colour-grey-light-background);
+    background-color: var(--colour-grey-3);
     /* e.g. 'Home' title when you're on the 'Home' page */
     color: var(--colour-text);
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .text-grey-70 {
-    color: var(--colour-grey)!important;
+    color: var(--colour-grey-1)!important;
 }
 
 /* e.g. dashboard */
@@ -73,7 +73,7 @@ body {
 .content p,
 .content pre,
 .content ul {
-    color: var(--colour-grey);
+    color: var(--colour-grey-1);
 }
 /* GROUP ELEMENTS / TEXT / ACCESSIBILITY / HOVER
 =================================================== */
@@ -110,14 +110,14 @@ label {
 
 /* e.g. text inputs like Title */
 .input-text, input.slug:focus, input.slug:hover {
-    background: var(--colour-grey-light-forms-1);
+    background: var(--colour-grey-6);
 }
 
 .input-text::-moz-placeholder {
-    color: var(--colour-grey);
+    color: var(--colour-grey-1);
 }
 .input-text::placeholder {
-    color: var(--colour-grey);
+    color: var(--colour-grey-1);
 }
 
 
@@ -126,13 +126,13 @@ label {
 /* GROUP ELEMENTS / TABLES
 =================================================== */
 .data-table {
-    color: var(--colour-grey);
+    color: var(--colour-grey-1);
     & thead {
-        background: var(--colour-grey-light-forms-1); /* e.g. >> /cp/assets/browse/assets */
+        background: var(--colour-grey-6); /* e.g. >> /cp/assets/browse/assets */
     }
     & tbody tr {
         &.row-selected {
-            background-color: var(--colour-grey-light-background);
+            background-color: var(--colour-grey-3);
         }
         &:hover {
             background-color: var(--colour-main-hover-light);
@@ -145,12 +145,12 @@ label {
 /* GROUP ELEMENTS / TABLES / GRID FIELD TYPE
 =================================================== */
 .grid-item-header {
-    background-color: var(--colour-grey-light-background)
+    background-color: var(--colour-grey-3)
 }
 
 .grid-table thead th,
 .grid-table > tbody > tr > td.drag-handle {
-    background-color: var(--colour-grey-light-forms);
+    background-color: var(--colour-grey-5);
 }
 
 
@@ -191,7 +191,7 @@ label .required,
 
 /* 2 */
 .btn-flat {
-    background: var(--colour-grey-light-buttons);
+    background: grey-transparent);
     color: var(--colour-text);
 }
 
@@ -248,7 +248,7 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
 .btn-flat.active,
 .btn-flat:active:not(:disabled),
 .btn-flat:hover:not(:disabled) {
-    background: var(--colour-grey-light-buttons);
+    background: grey-transparent);
     text-decoration: underline;
 }
 
@@ -284,7 +284,7 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
 /* GROUP COMPONENTS / ASSETS
 =================================================== */
 .assets-fieldtype .assets-fieldtype-picker {
-    background: var(--colour-grey-light-forms);
+    background: var(--colour-grey-5);
 }
 
 .assets-fieldtype .assets-fieldtype-picker .upload-text-button {
@@ -322,7 +322,7 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
 
 .vs__dropdown-option--highlight {
     /* e.g. 'template' select background colour of hovered item */
-    background: var(--colour-grey-light-background);
+    background: var(--colour-grey-3);
 }
 /* GROUP COMPONENTS / FORMS / ACCESSIBILITY / FOCUS
 =================================================== */
@@ -357,7 +357,7 @@ input.slug:focus-within:hover,
 .markdown-fieldtype-wrapper .markdown-modes button.active,
 /* e.g. textarea */
 .markdown-fieldtype-wrapper .CodeMirror {
-    background: var(--colour-grey-light-forms-1);
+    background: var(--colour-grey-6);
     color: var(--colour-text);
 }
 
@@ -374,7 +374,7 @@ input.slug:focus-within:hover,
 }
 
 .tabs .tab-button {
-    background-color: var(--colour-grey-light-buttons);
+    background-grey-transparent);
 }
 
 .tabs .tab-button.active,
@@ -389,12 +389,12 @@ input.slug:focus-within:hover,
 /* GROUP COMPONENTS / FIELD TYPES / SECTION
 =================================================== */
 .section-fieldtype {
-    background-color: var(--colour-grey-light-forms-1);
+    background-color: var(--colour-grey-6);
 }
 /* GROUP COMPONENTS / FIELD TYPES / BARD
 =================================================== */
 .bard-editor {
-    background-color: var(--colour-grey-light-forms-1);
+    background-color: var(--colour-grey-6);
 }
 
 .bard-fieldtype-wrapper:focus-within,
@@ -416,11 +416,11 @@ input.slug:focus-within:hover,
 /* GROUP COMPONENTS / FIELD TYPES / REPLICATOR
 =================================================== */
 .replicator-set-header {
-    background-color: var(--colour-grey-light-background);
+    background-color: var(--colour-grey-3);
 }
 
 .replicator-fieldtype {
-    background-color: var(--colour-grey-light-forms-1);
+    background-color: var(--colour-grey-6);
 }
 
 
@@ -447,7 +447,7 @@ body .vc-container {
 =================================================== */
 /* e.g. >> /cp/fields/blueprints/asset/edit */
 .blueprint-section-field .blueprint-section-field-inner {
-    background: var(--colour-grey-light-forms);
+    background: var(--colour-grey-5);
 }
 
 
@@ -456,7 +456,7 @@ body .vc-container {
 /* GROUP COMPONENTS / LIVE PREVIEW
 =================================================== */
 .live-preview-contents {
-    background: var(--colour-grey-live-preview);
+    background: var(--colour-grey-2);
 }
 
 
@@ -474,7 +474,7 @@ body .vc-container {
 /* GROUP COMPONENTS / FILTER
 =================================================== */
 .filter {
-    background: var(--colour-grey-light-forms);
+    background: var(--colour-grey-5);
 }
 
 
@@ -517,7 +517,7 @@ body .vc-container {
 }
 
 .outside.business-theme {
-    background: var(--colour-grey-light-background);
+    background: var(--colour-grey-3);
 }
 
 .auth-card {
@@ -536,24 +536,24 @@ body .vc-container {
 /* GROUP UTILITIES
 =================================================== */
 .bg-gray-10 {
-    background: var(--colour-grey-light-forms)!important;
+    background: var(--colour-grey-5)!important;
 }
 
 .bg-gray-20 {
-    background: var(--colour-grey-light-forms)!important;
+    background: var(--colour-grey-5)!important;
 }
 
 .bg-gray-100 {
     /* e.g. when browsing fieldtypes in in the blueprint editor */
-    background: var(--colour-grey-light-neutral)!important;
+    background: var(--colour-grey-4)!important;
 }
 
 .bg-gray-200 {
-    background: var(--colour-grey-light-buttons)!important; /* e.g. >> /cp/assets/browse/assets */
+    background: var(--colour-grey-4)!important; /* e.g. >> /cp/assets/browse/assets */
 }
 
 .bg-gray-300 {
-    background: var(--colour-grey-light-forms-1)!important; /* e.g. >> /cp/collections/somethings/blueprints/somethings/edit
+    background: var(--colour-grey-3)!important; /* e.g. >> cp/collections/somethings (the filter view) and >> /cp/collections/somethings/blueprints/somethings/edit
 }
 
 .bg-blue {
