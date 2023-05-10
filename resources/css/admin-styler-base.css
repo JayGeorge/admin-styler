@@ -18,6 +18,7 @@
 
     /* Dark to light */
     --colour-main: hsl(var(--colour-main-hue), var(--colour-main-saturation), var(--colour-main-lightness));
+    --colour-main-light: hsl(var(--colour-main-hue), var(--colour-main-saturation), 90%);
     /* Take the main colour by default, or override this with a darker colour */
     --colour-main-dark: hsl(var(--colour-main-hue), var(--colour-main-saturation), calc(var(--colour-main-lightness) - 5%));
     /* Darker. This is used for on hover for primary buttons like 'Save & Publish' */
@@ -386,6 +387,30 @@ input.slug:focus-within:hover,
 
 
 
+/* GROUP COMPONENTS / FILTERS
+=================================================== */
+/* e.g. >> /cp/collections/episodes */
+.filter-badge.filter-badge-control {
+    background: var(--colour-grey-4);
+}
+
+.filter {
+    /* Legacy from v3, not sure if this is still used */
+    background: var(--colour-grey-5);
+}
+/* GROUP COMPONENTS / FILTERS / PILLS
+=================================================== */
+.pill-tab {
+    color: var(--colour-grey-1);
+}
+.pill-tab.active {
+    background: var(--colour-main-light);
+    color: var(--colour-main-dark);
+}
+
+
+
+
 /* GROUP COMPONENTS / FIELD TYPES / SECTION
 =================================================== */
 .section-fieldtype {
@@ -466,15 +491,6 @@ body .vc-container {
 =================================================== */
 .global-search .active {
     background: var(--colour-main-hover-light);
-}
-
-
-
-
-/* GROUP COMPONENTS / FILTER
-=================================================== */
-.filter {
-    background: var(--colour-grey-5);
 }
 
 
