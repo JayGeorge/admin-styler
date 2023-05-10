@@ -120,6 +120,14 @@ label {
 .input-text::placeholder {
     color: var(--colour-grey-1);
 }
+/* GROUP ELEMENTS / FORMS / SECTIONS
+=================================================== */
+.publish-section-header {
+    background: var(--colour-grey-6);
+}
+.help-block {
+    color: var(--colour-grey-1);
+}
 
 
 
