@@ -373,6 +373,12 @@ input.slug:focus-within:hover,
     background: var(--colour-grey-3);
     color: var(--colour-main-dark);
 }
+.markdown-fieldtype-wrapper .markdown-modes button:hover {
+    color: var(--colour-main);
+}
+.markdown-fieldtype-wrapper .markdown-buttons button:hover {
+    background: var(--colour-grey-3);
+}
 
 
 
