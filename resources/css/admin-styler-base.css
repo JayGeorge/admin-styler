@@ -30,7 +30,7 @@
     --colour-black-off-2: hsl(var(--colour-black-hue), 10%, 20%);
 
     --colour-grey-1: hsl(var(--colour-black-hue), 10%, 50%);
-    --colour-grey-2: hsl(var(--colour-black-hue), 10%, 80%);
+    --colour-grey-2: hsl(var(--colour-black-hue), 10%, 90%); /* Based on asset labels */
     --colour-grey-3: hsl(var(--colour-black-hue), var(--background-saturation, 31%), var(--background-lightness, 95%));
     --colour-grey-4: hsl(var(--colour-black-hue), 50%, 98%);
     --colour-grey-5: hsl(var(--colour-black-hue), 70%, 98%);
@@ -569,7 +569,11 @@ body .vc-container {
 }
 
 .bg-gray-300 {
-    background: var(--colour-grey-3)!important; /* e.g. >> cp/collections/somethings (the filter view) and >> /cp/collections/somethings/blueprints/somethings/edit
+    background: var(--colour-grey-3)!important; /* e.g. >> cp/collections/somethings (the filter view) and >> /cp/collections/somethings/blueprints/somethings/edit */
+}
+
+.bg-gray-400 {
+    background: var(--colour-grey-2)!important; /* e.g. >> cp/collections/somethings (the filter view) and >> /cp/collections/somethings/blueprints/somethings/edit */
 }
 
 .bg-blue {
