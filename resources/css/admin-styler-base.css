@@ -45,6 +45,10 @@
     --box-shadow-focus: 0 0 0 0.2em var(--colour-main-focus);
 }
 
+*, :before, :after {
+    --tw-ring-color: var(--colour-main-focus);
+}
+
 
 /* GROUP ELEMENTS
 =================================================== */
@@ -335,10 +339,8 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
 }
 /* GROUP COMPONENTS / FORMS / ACCESSIBILITY / FOCUS
 =================================================== */
-.input-text:focus,
-.input-text:focus-within,
-input.slug:focus,
-input.slug:focus-within:hover,
+/* input.slug:focus, */
+/* input.slug:focus-within:hover, */
 .input-group:not(.focus-within-only):focus,
 .input-group:not(.focus-within-only):focus-within,
 /* Cancelled based on causing duplicate focus when focusing on a markdown field e.g. the default Content field */
@@ -349,6 +351,19 @@ input.slug:focus-within:hover,
 .vs__dropdown-toggle:focus-within,
 .select-input-container select:focus {
     box-shadow: var(--box-shadow-focus);
+}
+:focus-visible {
+    /* Keyboard focus on collection filters */
+    outline: var(--colour-main) auto 1px;
+}
+[class^=btn]:focus, [class*=" btn"]:focus {
+    /* Focus on settings in a collection */
+    outline: none;
+}
+.focus\:border-blue-300:focus {
+    /* Focus on search in a collection */
+    border-color: var(--colour-main-focus)!important;
+    --tw-ring-color: var(--colour-main-focus);
 }
 .markdown-fieldtype-wrapper .CodeMirror:focus-within {
     /* Focus on a markdown fieldtype */
