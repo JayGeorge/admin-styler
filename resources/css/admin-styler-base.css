@@ -455,7 +455,7 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
     background-color: var(--colour-grey-6);
 }
 
-.bard-fieldtype-wrapper:focus-within,
+/* .bard-fieldtype-wrapper:focus-within, */ /* cancelled this with v4 */
 .bard-fixed-toolbar .bard-toolbar-button:focus {
     box-shadow: 0 0 0 0.2rem var(--colour-main-focus);
 }
@@ -470,6 +470,10 @@ body:not(.outside) .btn-primary:hover:not(:disabled),
 
 .bard-fieldtype .ProseMirror > blockquote {
     border-color: var(--colour-main);
+}
+
+.bard-editor .ProseMirror:focus {
+    --tw-ring-color: var(--colour-main-focus);
 }
 /* GROUP COMPONENTS / FIELD TYPES / REPLICATOR
 =================================================== */
