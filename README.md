@@ -11,7 +11,6 @@
         --colour-main-saturation: 0%;
         --colour-main-lightness: 10%;
         --background-saturation: 0%;
-       --colour-main-hover-light: hsl(var(--colour-main-hue) var(--colour-main-saturation) 80% / 40%);
 
         ## Light
         --colour-main-saturation: 0%;
