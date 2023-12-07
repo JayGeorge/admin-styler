@@ -11,6 +11,7 @@
         --colour-main-saturation: 0%;
         --colour-main-lightness: 10%;
         --background-saturation: 0%;
+        --colour-grey-saturation: 0%;
 
         ## Light
         --colour-main-saturation: 0%;
