@@ -29,12 +29,12 @@
     --colour-black-off: hsl(var(--colour-black-hue), 10%, 15%);
     --colour-black-off-2: hsl(var(--colour-black-hue), 10%, 20%);
 
-    --colour-grey-1: hsl(var(--colour-black-hue), 10%, 50%);
-    --colour-grey-2: hsl(var(--colour-black-hue), 10%, 90%); /* Based on asset labels */
+    --colour-grey-1: hsl(var(--colour-black-hue), var(--colour-grey-saturation, 10%), 50%);
+    --colour-grey-2: hsl(var(--colour-black-hue), var(--colour-grey-saturation, 10%), 90%); /* Based on asset labels */
     --colour-grey-3: hsl(var(--colour-black-hue), var(--background-saturation, 31%), var(--background-lightness, 95%));
-    --colour-grey-4: hsl(var(--colour-black-hue), 50%, 98%);
-    --colour-grey-5: hsl(var(--colour-black-hue), 70%, 98%);
-    --colour-grey-6: hsl(var(--colour-black-hue), 100%, 99%);
+    --colour-grey-4: hsl(var(--colour-black-hue), var(--colour-grey-saturation, 50%), 98%);
+    --colour-grey-5: hsl(var(--colour-black-hue), var(--colour-grey-saturation, 70%), 98%);
+    --colour-grey-6: hsl(var(--colour-black-hue), var(--colour-grey-saturation, 100%), 98%);
     --colour-grey-transparent: transparent;
 
     --colour-text: hsl(var(--colour-black-hue) 32% 16%);
@@ -206,6 +206,12 @@ label .required,
 .btn-flat {
     background: grey-transparent);
     color: var(--colour-text);
+}
+
+/* Active */
+/* E.g. tree or list view for pages */
+.btn.active, .btn.active:hover, .btn-default.active, .btn-default.active:hover {
+    background: var(--colour-grey-2);
 }
 
 /* Disabled e.g. 'Create Collection' button */
